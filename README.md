@@ -1,3 +1,4 @@
 # Small DS projects
 
-ordinary-squares.py: a simple programm calculating Ordinary Least Squares coefficients.
+ordinary-squares.py: calculates Ordinary Least Squares coefficients.
+binary-disorder.py: calculates a confusion matrix.
