@@ -1,3 +1,3 @@
-# linear-regression
+# Small DS projects
 
-A simple programm calculating Ordinary Least Squares coefficients.
+ordinary-squares.py: a simple programm calculating Ordinary Least Squares coefficients.
