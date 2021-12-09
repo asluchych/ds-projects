@@ -28,10 +28,10 @@ if len(cluster1) != 0:
     c1 = cluster1.mean(axis=0).round(2)
     print(c1)
 else:
-    print(None)
+    print("No centroid for cluster 1")
 
 if len(cluster2) != 0:
     c2 = cluster2.mean(axis=0).round(2)
     print(c2)
 else:
-    print(None)
+    print("No centroid for cluster 2")
