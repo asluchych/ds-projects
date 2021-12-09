@@ -3,3 +3,5 @@
 ordinary-squares.py: calculates Ordinary Least Squares coefficients.
 
 binary-disorder.py: calculates a confusion matrix.
+
+centroids.py: calculates a centroid based on entered data points.
