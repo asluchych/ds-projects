@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-
-
 
 from sklearn.datasets import load_boston
 
@@ -15,6 +15,19 @@ boston = pd.DataFrame(boston_dataset.data, columns=boston_dataset.feature_names)
 # Add price column (a target value in the dataset) to the DataFrame
 boston["MEDV"] = boston_dataset.target
 
+# Exploratory data analysis
+print('\n')
+print("The shape of the data frame is: ", boston.shape)
+print("The colums are : ", boston.columns)
+print('\n')
+print("Summary statistics:\n", boston.describe().round(2))
+print('\n')
+print(boston[['MEDV', 'RM']].head(10))
+print('\n')
+boston.hist(column = 'RM', bins = 20)
+plt.savefig('plot1.png')
+plt.show()
+print('\n')
 # Univariate Linear Regression
 # Use a number of rooms as a feature matrix and the price as a target
 X = boston[["RM"]]
