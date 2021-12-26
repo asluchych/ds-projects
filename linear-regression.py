@@ -27,7 +27,22 @@ print('\n')
 boston.hist(column = 'RM', bins = 20)
 plt.savefig('plot1.png')
 plt.show()
+
+# Correlation matrix
+corr_matrix = boston.corr().round(2)
 print('\n')
+print('The correlation matrix is:\n', corr_matrix)
+print('\n')
+
+# Data preparation: feature selection
+boston.plot(kind = 'scatter', x = 'RM', y = 'MEDV', figsize = (8,6))
+plt.savefig('plot1.png')
+plt.show()
+
+boston.plot(kind = 'scatter', x = 'LSTAT', y = 'MEDV', figsize = (8, 6))
+plt.savefig('plot2.png')
+plt.show()
+
 # Univariate Linear Regression
 # Use a number of rooms as a feature matrix and the price as a target
 X = boston[["RM"]]
